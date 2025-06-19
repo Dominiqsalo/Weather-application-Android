@@ -1,0 +1,19 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.myweatherapp.ui.home.HomeFragment">
+        <!-- Use actions to define navigation paths -->
+        <action
+            android:id="@+id/action_to_nextFragment"
+            app:destination="@id/nextFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nextFragment"
+        android:name="com.example.myweatherapp.ui.CitiesFragment" />
+</navigation>

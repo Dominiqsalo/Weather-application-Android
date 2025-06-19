@@ -1,0 +1,51 @@
+# Android build
+/build/
+**/build/
+
+# Gradle
+.gradle/
+local.properties
+*.iml
+
+# IDE filer
+.idea/
+*.iws
+*.ipr
+*.bak
+*.swp
+
+# Loggar & tillfälliga filer
+*.log
+*.tmp
+*.temp
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# APK/AAB-filer
+*.apk
+*.ap_
+*.aab
+
+# Auto-generated
+/captures/
+output.json
+
+# Keystore (om du skulle signera appen i framtiden)
+*.jks
+*.keystore
+
+# Lint / test / coverage
+lint/intermediates/
+lint/generated/
+*.ec
+*.hprof
+
+# Kotlin build
+.kotlinc/
+
+# Others
+.cache/

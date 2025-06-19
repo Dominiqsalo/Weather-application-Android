@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Search EditText -->
+    <EditText
+        android:id="@+id/cityNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for city"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/searchButton"
+        android:inputType="text" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Search"
+        android:layout_alignBaseline="@id/cityNameInput" />
+
+    <Button
+    android:id="@+id/back_buttonn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    android:text="Back"/>
+
+    <!-- RecyclerView for search results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cityNameInput"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical" />
+
+
+
+</RelativeLayout>
